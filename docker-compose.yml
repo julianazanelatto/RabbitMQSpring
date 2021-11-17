@@ -1,0 +1,25 @@
+# RabbitMQ properties
+services:
+        rabbitmq:
+               image: rabbitmq:3-management
+               container_name: rabbitmq_management
+               
+               ports: 
+                - 25672:25672
+                - 15672:15672
+               
+               volumes:
+                # persistencia de dados
+                - /docker_conf/rabbitmq/data/:/var/lib/rabbitmq/
+                # mapemanento dos dados host:container
+                # neste caso serão armazenados no host os dados sobre as filas e mensagens do container
+               environment:
+                - RABBITMQ_DEFAULT_USER=admin
+                - RABBITMQ_DEFAULT_PASS=pass123
+
+               restart: always
+
+volumes:
+    logs-folder:
+        name: ${log_rabbitmq_management}
+        driver: local
