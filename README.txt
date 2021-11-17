@@ -20,8 +20,9 @@ Caso tenha interesse em utilizar o Portainer.io acesse: https://simplificandored
 Conteúdo
 ---------
 
-A raiz contem uma arquivo denominado docker-compose.yml. Este arquivo, possui as configurações utilizadas para criar o container com imagem 
-RabbitMQ. Dessa formal, foram setados alguns parâmetros como: restart com sistema do host,mapeamento de dados entre host e container, imagem 
+A raiz contem uma arquivo denominado docker-compose.yml. Portanto, este arquivo não faz parte do projeto Java Spring. Mova-o para a uma pasta dedicada 
+ao docker-compose. Continuando ... Este arquivo, possui as configurações utilizadas para criar o container com imagem 
+RabbitMQ. Dessa formal, foram setados alguns parâmetros como: restart com sistema do host, mapeamento de dados entre host e container, imagem 
 utilizada do docker hub.
 
 Caso você ainda não conhece os conceitos de virtualização e as vantagens do docker, 
